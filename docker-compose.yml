@@ -1,0 +1,19 @@
+version: "3.5"
+
+services:
+  mariadb:
+    container_name: mqtt-broker
+    image: mqtt-broker:latest
+    restart: always
+    ports:
+      - 1883:1883
+      - 8883:8883
+    volumes:
+      - ./storage:/app/storage
+    environment:
+      - ID=mybroker
+      - SECURE_KEY=this-is-secret-key
+      - HOST=0.0.0.0
+      - SSL_CERT=
+      - SSL_KEY=
+      - DEBUG=true

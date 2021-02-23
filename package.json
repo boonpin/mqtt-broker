@@ -1,0 +1,17 @@
+{
+  "name": "mqtt-broker",
+  "version": "1.0.0",
+  "description": "MQTT Broker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/broker"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aedes": "^0.44.2",
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mqtt": "^4.2.6"
+  }
+}
